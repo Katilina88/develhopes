@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>HTML Lesson</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+<header>
+  <h1>Choose your music streaming service plan</h1>
+  <p><em>Please fill out this form with the <b>required</b> information</em></p>
+</header>
+  <body>
+    <form>
+
+      <div>
+        <label for ="first_name">First Name:</label>
+        <input type="text" name="first_name" id="first_name" placeholder="Caterina" maxlenght="20" minlenght="2"  required>
+      </div>
+      <br>
+      
+    
+      <div>
+        <label for="last_name">Last Name:</label>
+        <input type="text" name="last_name" id="last_name" placeholder="Lo Grasso" maxlenght="20" minlenght="2" required>
+      </div>
+      <br>
+     
+
+      <div>
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" placeholder="caterinalograsso@gmail.com" required>
+       
+      </div>
+      <br>
+
+      <div>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" minlenght="4" maxlenght="10" required>
+      </div>
+      <br>
+
+      <div>
+        <label for="birthday">Date of Birth:</label>
+        <input type="date" id="birthday" name="birthday" required>
+      </div>
+      <br>
+
+      <div>
+        <label for="phonenumber">Phone Number:</label>
+        <input type="phonenumber" name="phonenumber" id="phoneumber" placeholder="+393714581484" required>
+
+      </div>
+      <br>
+
+      <div>
+        <label for="plan">Choose your plan</label>
+        <select name="plan" id="plan">
+          <option value="free_plan">Free Plan</option>
+          <option value="premium_plan">Premium Plan</option>
+          <option value="pro_plan">Pro Plan</option>
+        </select>
+      </div>
+      <br>
+
+      <div>
+        <fieldset>
+        <legend><h4>Premium Plan</h4></legend>
+
+        <label for="premium_plan"><b>Individual:</b> $10 per month</label>
+        <input type="radio" name="premium_plan" value="10_per_month">
+      <br>
+
+        <label for="premium_plan"><b>Duo:</b> $20 per month</label>
+        <input type="radio" name="premium_plan" value="20_per_month">
+      <br>
+
+        <label for="premium_plan"><b>Family:</b> $30 per month</label>
+        <input type="radio" name="premium_plan" value="30_per_month">
+
+      </fieldset>
+      </div>
+
+      <div>
+        <fieldset>
+        <legend><h4>Pro Plan</h4></legend>
+        <input type="checkbox" name="pro_plan" id="ad_free_music">
+        <label for="ad_free_music">Ad Free Music</label> <br>
+
+        <input type="checkbox" name="pro_plan" id="on_demand_playback">
+        <label for="on_demand_playback">On-demand playback</label> <br>
+
+        <input type="checkbox" name="pro_plan" id="block_explicit_song">
+        <label for="block_explicit_song">Block explicit songs</label> <br>
+      </fieldset>
+      </div>
+      <br>
+      <br>
+       
+
+
+      
+
+<div>
+  <label for="cardnumber">Credit Card Number:</label>
+<input id="cardnumber" type="text" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx">
+</div>
+
+<div>
+  <label for="cvcnum">CVC:</label>
+<input name="cvcnum" id="cvcnum" type="text"  placeholder="xxx" required>
+</div>
+
+<div>
+  <label for="experation_date">Experation Date:</label>
+<input type="text" name="experation_date" id="experation_date" placeholder="MM/YYYY" required>
+</div>
+
+
+<div>
+  
+<label for="billing_address">Billing Address:</label>
+<input id="billing_address" type="text" name="billing_address" placeholder="Via Pitrè, 107" required>
+</div>
+<br>
+<br>
+
+<input id="submit" type="submit" value="submit">
+<input id="reset" type="reset" value="reset">
+
+    </form>
+    
+
+  </body>
+</html>
