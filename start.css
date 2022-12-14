@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: stretch;
+    gap: 10px;
+    flex-wrap: wrap;
+    height: 500px;
+
+}
+
+#yellow {
+    order: 5;
+}
+
+#red {
+    order: 4;
+}
+
+#green {
+    order: 3;
+}
+
+
+#blue {
+    order: 2;
+}
+
+#orange {
+    order: 2;
+    flex-grow: 2;
+
+}
