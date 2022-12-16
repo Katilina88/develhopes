@@ -1,0 +1,134 @@
+.root {
+    --color: black;
+}
+
+.container {
+    max-width: 300px;
+    max-height: 700px;
+    height: 100%;
+    background: rgb(208, 208, 208);
+  
+    
+   
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(50px, 1fr));
+    grid-template-rows: repeat(6, minmax(50px, 1fr));
+    border: 1px solid rgb(230, 228, 228);
+   
+    grid-template-areas: 
+    "header header header header"
+    "plus substraction multiplication division"
+    "seven eight nine equal"
+    "four five six equal"
+    "one two three equal"
+    "zero point allclear equal"
+
+
+}
+
+.calculator>* {
+    border: 1px solid rgb(119, 119, 119);
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    padding: 20px;
+   
+}
+
+.header {
+    grid-area: header;
+    background: rgb(65, 65, 65);
+    color: white;
+    text-align: right;
+}
+
+.plus {
+    grid-area: plus;
+    background: rgb(172, 172, 195);
+    color: var(--color);
+}
+.substraction {
+    grid-area: substraction;
+    background: rgb(172, 172, 195);
+    color: var(--color);
+}
+.multiplication {
+    grid-area: multiplication;
+    background: rgb(172, 172, 195);
+    color: var(--color);
+
+}
+.division {
+    grid-area: division;
+    background: rgb(172, 172, 195);
+    color: var(--color);
+}
+
+.seven {
+    grid-area: seven;
+    color: var(--color);
+}
+.eight {
+    grid-area: eight;
+    color: var(--color);
+}
+
+.nine {
+    grid-area: nine;
+    color: var(--color);
+}
+.four {
+    grid-area: four;
+    color: var(--color);
+}
+
+.five {
+    grid-area: five;
+    color: var(--color);
+}
+
+.six {
+    grid-area: six;
+    color: var(--color);
+}
+
+.one {
+    grid-area: one;
+    color: var(--color);
+}
+
+.two {
+    grid-area: two;
+    color: var(--color);
+}
+
+.three {
+    grid-area: three;
+    color: var(--color);
+    
+}
+
+.equal {
+    grid-area: equal;
+    background: rgb(206, 112, 112);
+    text-align: center;
+    padding: 60px 20px 60px 20px;
+    color: var(--color);
+}
+.zero {
+    grid-area: zero;
+    color: var(--color);
+}
+
+.point {
+    grid-area: point;
+    color: var(--color);
+}
+
+.allclear {
+    color: var(--color);
+}
