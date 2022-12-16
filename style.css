@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: white;
+    
+}
+
+.sidebar {
+    max-width: 200px;
+    height: 110vh;
+    background: linear-gradient(rgb(255, 255, 255), #121212);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+   
+
+    
+}
+   
+
+ .nav-links {
+    flex: 1;
+    display: column;
+    flex-direction: column;
+    align-self: center;
+    transition: 0.3s;
+
+ }
+
+
+
+
+
+.home {
+    font-size: 40px;
+   
+    padding: 20px;
+    padding-bottom: 50px;
+  
+    font-weight: bold;
+}
+
+.flaticon {
+    height: 26px;
+    width: 26px;
+ 
+    
+}
+
+.music {
+    
+    color: #2b2b2b;
+    font-size: 40px;
+    padding: 20px;
+    padding-bottom: 50px;
+   
+    font-weight: bold;
+}
+
+
+.podcast {
+    font-size: 40px;
+   
+    padding: 10px;
+    padding-bottom: 50px;
+    font-weight: bold;
+} 
+
+.library {
+    font-size: 40px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: #2b2b2b;
+}
+
+a:hover {
+    color: #2b2bb2;
+    transition: 0.3s;
+}
+
+.sidebar-footer img, h2{
+    flex: 1;
+    align-items: flex-end;
+    display: flex;
+    padding: 5px;
+    margin: 45px; 
+}
+
+
+        
+
+    .avatar {
+       
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        
+
+    }
+
+    #username {
+        color: rgb(255, 255, 255);
+    }
+
+    @media screen and (max-height:450px) {
+    .sidebar: {
+        padding-top: 15px;
+    }
+
+    }
+        
+    
