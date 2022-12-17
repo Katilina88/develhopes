@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: white;
+    height: 30px;
+}
+
+.container {
+    margin: 0;
+    background: rgb(51, 49, 49);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+
+li {
+    display: inline-block;
+
+}
+
+
+
+.nav {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 22px;
+}
+
+.home-link {
+    text-decoration: none;
+    color: #fff;
+    margin: 1rem;
+    font-size: 28px;
+    padding: 22px;
+}
+
+.link-link {
+    text-decoration: none;
+    color: rgb(160, 159, 159);
+    margin: 1rem;
+    font-size: 28px;
+    padding: 22px;
+}
+
+.dropdown {
+    border: hidden;
+    color: rgb(160, 160, 160);
+    background-color: transparent;
+    font-size: 28px;
+    padding: 22px;
+
+}
+
+
+.disabled-btn {
+    text-decoration: none;
+    color: rgb(104, 104, 104);
+    font-size: 28px;
+    padding: 22px;
+    margin: 1rem;
+}
+
+button[type="submit"]:hover {
+    background-color: rgb(32, 141, 85);
+    color: #ffff;
+
+}
+
+input,
+button {
+    padding: 3px;
+
+}
+
+.search-btn {
+    border: 3px solid green;
+    margin: 0.5rem;
+    border-radius: 10px;
+    width: 100px;
+    height: 50px;
+    text-decoration: none;
+    background-color: rgb(51, 49, 49);
+    color: green;
+    font-size: 22px;
+}
+
+.input-btn {
+    border-radius: 10px;
+    padding: 22px;
+    border: 3px solid rgb(219, 219, 219);
+    width: 250px;
+    height: 50px;
+}
+
+input::placeholder {
+    font-size: 22px;
+}
+
+.ham-menu span {
+    width: 25px;
+    height: 3px;
+    display: block;
+    border-radius: 30px;
+    background-color: rgb(123, 246, 150);
+    margin: 4px 0;
+
+}
+
+.ham-menu {
+    display: none;
+    margin-right: 10px;
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .ham-menu {
+        display: block;
+    }
+
+    li :not(.nav),
+    .btn {
+        display: none;
+    }
+}
