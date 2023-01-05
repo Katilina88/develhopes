@@ -1,0 +1,52 @@
+$color-primary: red;
+$color-tertiary: green;
+$color-secondary: blue;
+$myHeight: 100px;
+
+
+body {
+    border: 1px solid $color-primary;
+    height: 250px;
+}
+
+div {
+   
+
+    h1 {
+        color: $color-tertiary;
+
+        text: {
+            decoration: underline $color-secondary;
+            align: center;
+        }
+
+    }
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+
+
+    article {
+        border: 1px solid $color-tertiary;
+        height: $myHeight;
+        padding: 25px;
+
+        &:nth-child(even) {
+            color: $color-secondary;
+
+        }
+
+        &:nth-child(odd) {
+            color: $color-primary;
+        }
+
+
+
+    }
+
+
+}
