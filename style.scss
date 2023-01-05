@@ -1,0 +1,51 @@
+@import "_variable.scss"; 
+@import "_function.scss"; 
+
+body {
+    border: 1px solid red;
+}
+
+div {
+    h1 {
+        color: green;
+
+        text: {
+            align: center;
+            decoration: underline blue;
+        }
+    }
+}
+
+section {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin: 10px;
+
+    article {
+        border: 1px solid green;
+
+        width: 100%;
+        padding: 25px;
+
+        &:nth-child(even) {
+            @include theme(red, 1rem, green);
+
+        }
+
+        &:nth-child(odd) {
+            @include theme(blue, 1rem, green);
+        }
+    }
+
+    &:nth-child(3) {
+        article {
+
+            @include theme(green, 1.5rem, blue);
+        }
+
+
+    }
+}

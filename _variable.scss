@@ -1,0 +1,7 @@
+@mixin theme ($color, $font-size, $border-color) {
+
+    color: $color;
+    font-size: $font-size;
+    border-color: $border-color;
+
+}
