@@ -1,0 +1,121 @@
+@import "_variable.scss";
+@import "_function.scss";
+
+
+%text {
+    border: $color-primary solid 1px;
+    padding: 1rem;
+    text-align: center;
+
+}
+
+body {
+    @extend %text;
+
+}
+
+div {
+
+
+    h1 {
+        color: $color-tertiary;
+
+        text: {
+            align: center;
+            decoration: underline blue;
+        }
+    }
+
+    h2 {
+        @extend h1;
+        @extend %text;
+        text-decoration: none;
+        width: fit-content;
+        margin: auto;
+    }
+}
+
+
+section {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin: 10px;
+
+    article {
+        border: 1px solid $color-tertiary;
+
+        width: 100%;
+        padding: 25px;
+
+        &:nth-child(even) {
+            @include theme($color-primary, 1rem, $color-tertiary);
+
+        }
+
+        &:nth-child(odd) {
+            @include theme($color-secondary, 1rem, $color-tertiary);
+        }
+    }
+
+    &:nth-child(4) {
+        margin-top: 1rem;
+        width: 100%;
+        justify-content: space-between;
+
+
+
+
+        div {
+            width: 3rem;
+            height: 3rem;
+            border: 1px solid $color-primary;
+            text-align: left;
+
+
+            $num: 0;
+
+            @for $i from 1 through 19 {
+                $num: $num +5;
+
+                @if $i ==10 {
+                    &:nth-child(#{$i}) {
+                        background-color: blue;
+                        color: red;
+                    }
+
+                }
+
+                @else {
+                    &:nth-child(#{$i}) {
+                        background-color: darken(white, $num);
+                        color: lighten(#000000, $num);
+                    }
+                }
+
+
+            }
+        }
+    }
+
+    &:nth-child(5) {
+        article {
+            @include theme ($color-tertiary, 1.5rem, $color-secondary)
+        }
+    }
+
+
+
+
+
+
+    $size: 1rem 2rem 3rem;
+
+    @each $i in $size {
+        .fs-#{$i} {
+            font-size: $i;
+        }
+    }
+}
